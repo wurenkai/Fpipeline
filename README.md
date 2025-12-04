@@ -55,4 +55,5 @@ Notes of inference:
 + `--ImageNet` `--FFHQ` `--Places2_Nature`: You must enable one option to select corresponding ckpts.
 + Please use absolute path.
 
-The methodology is derived from an improved version of the [ICT](https://github.com/raywzy/ICT) model adapted to the “anonymization” task, and will be described in more detail once the paper is fully received.
+## Acknowledgement
+Thanks to [ICT](https://github.com/raywzy/ICT), [EfficientNet](https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet), [UNet++](https://github.com/MrGiovanni/UNetPlusPlus) for their outstanding work.
