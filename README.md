@@ -1,4 +1,8 @@
-# DRBEST
+# CKD-CFPUWF
+
+## Preprocessing
+
+Please follow the process in Figure 4 of the paper and use the code in the preprocessing folder and the calibration board to preprocess the images.
 
 ## Training
 
@@ -54,6 +58,19 @@ Notes of inference:
 + `--visualize_all`: You could save each output result via disabling this option.
 + `--ImageNet` `--FFHQ` `--Places2_Nature`: You must enable one option to select corresponding ckpts.
 + Please use absolute path.
+
+## CKD screening model
+
+1. In the CKD screening model folder, specify the CSV file address and image address.
+2. The CSV file must contain two columns, image_name and label. A label of 1 indicates a diagnosis of CKD, and 0 indicates normal.
+3. After adding the addresses of each file as required, run the following command：
+```
+python train.py
+```
+4. For inference and testing, you need to make the same changes to the configuration file inside, and run the following command:
+```
+python test.py
+```
 
 ## Acknowledgement
 Thanks to [ICT](https://github.com/raywzy/ICT), [EfficientNet](https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet), [UNet++](https://github.com/MrGiovanni/UNetPlusPlus) for their outstanding work.
