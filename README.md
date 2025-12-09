@@ -1,19 +1,9 @@
-# CKD-CFPUWF
-
-This repository provides the implementation of CKD-CFPUWF, including:
-
-1. CFP images preprocessing using calibration-board correction.
-
-2. Transformer-based image completion and reconstruction.
-
-3. A CKD screening and classification pipeline using generated UWF images.
-
 ## Environment Setup
 
 #### 1) Create Conda environment
 ```
-conda create -n CKD_CFPUWF python=3.8
-conda activate CKD_CFPUWF
+conda create -n XXXXXX python=3.8
+conda activate XXXXX
 ```
 
 #### 2) Install dependencies
@@ -30,9 +20,9 @@ Please follow the procedure illustrated in Figure 4 of our paper.
 
 1. Calibration board correction
 
-2. Geometric alignment and cropping. Align all CFP images into the coordinate space (UWF images).
+2. Geometric alignment and cropping.
 
-3. Mask generation. Create masks for subsequent generation work.
+4. Mask generation. Create masks for subsequent generation work.
 
 ## Training
 
@@ -89,9 +79,9 @@ Notes of inference:
 + `--ImageNet` `--FFHQ` `--Places2_Nature`: You must enable one option to select corresponding ckpts.
 + Please use absolute path.
 
-## CKD screening model
+## Screening model
 
-1. In the CKD screening model folder, specify the CSV file address and image address.
+1. In the Screening model folder, specify the CSV file address and image address.
 2. The CSV file must contain two columns, image_name and label. A label of 1 indicates a diagnosis of CKD, and 0 indicates normal.
 ```
 image_name,label
