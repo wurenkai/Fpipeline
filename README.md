@@ -82,7 +82,7 @@ Notes of inference:
 ## Screening model
 
 1. In the Screening model folder, specify the CSV file address and image address.
-2. The CSV file must contain two columns, image_name and label. A label of 1 indicates a diagnosis of CKD, and 0 indicates normal.
+2. The CSV file must contain two columns, image_name and label. A label of 1 indicates a diagnosis, and 0 indicates normal.
 ```
 image_name,label
 001.png,1
